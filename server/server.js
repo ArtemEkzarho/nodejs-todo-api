@@ -40,8 +40,6 @@ app.get('/todos/:id', (req, res) => {
     }
 
     Todo.findById(id).then(todo => {
-
-        console.log(todo);
         if(!todo) {
             return res.status(404).send();
         }
