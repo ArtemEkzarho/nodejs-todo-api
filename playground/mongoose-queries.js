@@ -31,12 +31,12 @@ const {User} = require('./../server/models/user');
 //     console.log(e);
 // })
 
-User.findById('5bff1a3c33537ccb92482e11').then(user => {
-    if(!user) {
-        return console.log('User not found');
-    }
+// User.findById('5bff1a3c33537ccb92482e11').then(user => {
+//     if(!user) {
+//         return console.log('User not found');
+//     }
 
-    console.log('User by id', user);
-}).catch(e => {
-    console.log(e);
-});
+//     console.log('User by id', user);
+// }).catch(e => {
+//     console.log(e);
+// });
