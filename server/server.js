@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const {ObjectID} = require('mongodb');
 
-var {mongoose} = require('./db/mongoose');
+var {mongoose} = require('./db/mongoose'); // connect to MongoDB
 var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
 var {authenticate} = require('./middleware/authenticate')
@@ -43,7 +43,7 @@ app.get('/todos/:id', (req, res) => {
 
     Todo.findById(id).then(todo => {
         if(!todo) {
-            return Promise.reject();
+            res.status(404).send();
         }
 
         res.send({todo});
