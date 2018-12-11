@@ -1,5 +1,7 @@
 # Todo api
 
+https://limitless-inlet-24414.herokuapp.com
+
 **GET /todos** - fetch all todos by current user('x-auth' with JW token in request header)
 
 **POST /todos** - add todo obj with JW token from current user('x-auth' with JW token in request header)
