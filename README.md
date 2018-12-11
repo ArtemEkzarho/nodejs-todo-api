@@ -1,4 +1,4 @@
-# Todo api:
+# Todo api
 
 **GET /todos** - fetch all todos by current user('x-auth' with JW token in request header)
 
